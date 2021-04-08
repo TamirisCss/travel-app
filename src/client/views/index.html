@@ -17,7 +17,7 @@
 
             <p class = "">Destination: </p>
             <input id="input-destination"
-                placeholder="Please enter a valid zipcode or city"
+                placeholder="Please enter a valid city"
             type="text">
 
             <p class = "">Start Date: </p>
@@ -30,8 +30,8 @@
                 placeholder="dd/mm/yyyy"
             type="date">
 
-            <button class = "button" onClick = "" type="button">Submit</button> 
-            <button id = "deleteTrip" class = "button" type="button">Delete Trip</button>
+            <button id="submit-button" class = "submit-button" onclick="return Client.handleSubmit(event)" type="button">Submit</button> 
+            <button id = "deleteTrip-button" class = "deleteTrip-button" type="button">Delete Trip</button>
 
             <p><div id="latitude"></div></p>
             <p><div id="longitude"></div></p>
