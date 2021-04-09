@@ -5,9 +5,19 @@ export default function handleSubmit(event) {
         const destination = document.getElementById('input-destination').value //city
 
     console.log("::: Form Submitted :::")
-    fetch('http://localhost:8080/test')
+    fetch('http://localhost:8000/destinations', 
+    {
+        method: 'POST',
+        headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+        },
+        
+        body: JSON.stringify({destination: destination})
+    })
     .then(res => res.json())
     .then(function(res) {
-        document.getElementById('results').innerHTML = res.message
+        console.log(res)
+        //document.getElementById('results').innerHTML = res.message
     })
 }
