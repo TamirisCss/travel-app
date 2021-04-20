@@ -4,45 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a0e4aef26a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Pattaya&display=swap" rel="stylesheet">
     <title>TravelApp</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <h1>TravelApp</h1>
     </header>
 
     <main>
 
-        <section class ="">
+        <section class ="container">
+            <div class="form">
 
-            <p class = "">Destination: </p>
-            <input id="input-destination"
-                placeholder="Please enter a valid city"
-            type="text">
+                <p>Destination:</p>
+                <input id="input-destination"
+                    placeholder="Please enter a valid city"
+                type="text" required>
+    
+                <p>Start Date:</p>
+                <input id="input-start-date"
+                    placeholder="dd/mm/yyyy"
+                type="date" required>
+    
+                <p>End Date:</p>
+                <input id="input-end-date"
+                    placeholder="dd/mm/yyyy"
+                type="date" required>
+    
+                <button id="submit-button" class = "submit-button" onclick="return Client.handleSubmit(event)" type="button">Submit</button> 
+                <!-- <button id = "deleteTrip-button" class = "deleteTrip-button" type="button">Delete Trip</button> -->
+            </div>
 
-            <p class = "">Start Date: </p>
-            <input id="input-start-date"
-                placeholder="dd/mm/yyyy"
-            type="date">
+            <div class="info">
+    
+                <p>Country Code:<div id="country"></div></p>
+                <p><div id="placeName">Aqui vai nome da City</div></p>
+                <p><div id="latitude">latitude</div></p>
+                <p><div id="longitude">longitude</div></p>
+                <p>Expected Weather:<ul id="weather"></ul></p>
+                <p><div id="image" class = "imagem">Aqui vai a imagem</div>
+            </div>
 
-            <p class = "" >End Date: </p>
-            <input id="input-end-date"
-                placeholder="dd/mm/yyyy"
-            type="date">
-
-            <button id="submit-button" class = "submit-button" onclick="return Client.handleSubmit(event)" type="button">Submit</button> 
-            <button id = "deleteTrip-button" class = "deleteTrip-button" type="button">Delete Trip</button>
-
-            <p><div id="latitude"></div></p>
-            <p><div id="longitude"></div></p>
-
-            <p>Country Code:<div id="country"></div></p>
-            <p><div id="placeName"></div></p>
-            <p>Expected Weather:<ul id="weather"></ul></p>
-            <p><div id="image" class = ""></div>
 
         </section>
 
     </main>
+    <footer class="footer">
+        <h3>developed by Tamiris Cristine</h3>
+        <ul>
+            <li><a target="_blank" href="https://www.linkedin.com/in/tamiris-udacitystudent/"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a target="_blank" href="https://github.com/TamirisCss"><i class="fab fa-github"></i></a></li>
+        </ul>
+    </footer>
 </body>
 </html>

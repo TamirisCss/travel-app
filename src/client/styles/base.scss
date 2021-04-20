@@ -1,5 +1,21 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+$gradient: -webkit-linear-gradient(left, #38D39F, #38A4D3);
+
+html {
+    font-size: 62.5%;
 }
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+@import "reset";
+@import "header";
+@import "form";
+@import "footer";

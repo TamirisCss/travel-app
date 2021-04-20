@@ -1,0 +1,40 @@
+.container {
+    min-height: 80vh;
+    @include flex(space-between, center, row);
+    flex-wrap: wrap;
+    margin: 0rem 1rem;
+}
+
+.form {
+    padding: 1rem;
+    flex: 1 1 30rem;
+
+    p {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    input {
+        width: 100%;
+        padding: 0.7rem;
+        margin-bottom: 1.2rem;
+        font-size: 1rem;
+    }
+
+    button {
+        width: 50%;
+        padding: 0.7rem;
+        font-size: 1rem;
+        cursor: pointer;
+        background: $gradient;
+        border: none;
+        color: white;
+        &:hover {
+            background: -webkit-linear-gradient(left, #38A4D3, #38D39F);
+        }
+    }
+}
+
+.info {
+    padding: 1rem;
+    flex: 1 1 40rem;
+}

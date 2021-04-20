@@ -18,6 +18,6 @@ export default function handleSubmit(event) {
     .then(res => res.json())
     .then(function(res) {
         console.log(res)
-        //document.getElementById('results').innerHTML = res.message
+        //add response in the html
     })
 }

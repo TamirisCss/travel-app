@@ -1,0 +1,21 @@
+.form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+
+.form label {
+  font-size: 1.5rem;
+}
+
+.form input {
+  width: 100%;
+  padding: 0.7rem;
+}
+
+.info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+}
+/*# sourceMappingURL=form.css.map */

@@ -1,0 +1,19 @@
+.footer {
+    min-height: 10vh;
+    background: $gradient;
+    @include flex(space-around, center, row);
+    h3 {
+        color: white;
+        letter-spacing: 1px;
+    }
+    ul {
+        @include flex(center, center, row);
+       a {
+           padding: 1rem;
+           font-size: 1.5rem;
+       }
+    }
+}
+.fab {
+    color: white;
+}

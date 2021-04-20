@@ -1,0 +1,10 @@
+.header {
+    min-height: 10vh;
+    background: $gradient;
+    font-size: 2rem;
+    @include flex(center, center, row);
+    h1 {
+        font-family: 'Pattaya', sans-serif;
+        letter-spacing: 1px;
+    }
+}
