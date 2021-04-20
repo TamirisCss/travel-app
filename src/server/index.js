@@ -38,6 +38,8 @@ app.post('/destinations', async (req, res) => {
         let destination = {}
         destination.lat = geonamesData.lat
         destination.long = geonamesData.lng
+        destination.country = geonamesData.countryName
+        destination.cityname = geonamesData.name
 
         const weatherUrl = `https://api.weatherbit.io/v2.0/current?lat=${destination.lat}&lon=${destination.long}&key=${process.env.WEATHERBIT_KEY}`;
         const weatherResponse = await axios.post(weatherUrl)
