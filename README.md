@@ -1,4 +1,6 @@
 ## travel-app :airplane:
+### Preview:
+![screenshot](/travel-app-screenshot.png)
 
 ### This project uses the following APIs:
 - [Geonames](http://www.geonames.org/export/web-services.html)
