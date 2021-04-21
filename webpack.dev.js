@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
+const WorkboxPlugin = require('workbox-webpack-plugin');
 
 module.exports = {
   mode: "development",
@@ -17,7 +18,8 @@ module.exports = {
       template: path.resolve(__dirname, './src/client/views/index.html'), // template file
       filename: 'index.html', // output file
     }),
-    new CleanWebpackPlugin()
+    new CleanWebpackPlugin(),
+    new WorkboxPlugin.GenerateSW()
   ],
   module: {
     rules: [
