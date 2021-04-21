@@ -1,4 +1,4 @@
-## travel-app
+## travel-app :airplane:
 
 ### This project uses the following APIs:
 - [Geonames](http://www.geonames.org/export/web-services.html)
