@@ -2,8 +2,6 @@ export default function handleSubmit(event) {
     event.preventDefault()
     
     const city = document.getElementById('input-city').value //city
-    const startDate = document.getElementById('input-start-date').value //start date
-    const endDate = document.getElementById('input-end-date').value //end date
 
     const placeName = document.getElementById('placeName')
     const country = document.getElementById('country') //country
@@ -37,5 +35,17 @@ export default function handleSubmit(event) {
         weather.textContent = `${res.temp} °C`
         weatherIcon.innerHTML = `<img src="https://www.weatherbit.io/static/img/icons/${res.weather.icon}.png"/>`
         pixImg.src = res.photo
+        calculateTravelDate()
     })
 }
+
+const calculateTravelDate = () => {
+    const startDate = new Date(document.getElementById('input-start-date').value);
+    const endDate = new Date(document.getElementById('input-end-date').value);
+  
+    const countdown = Math.ceil(startDate - new Date());
+    const duration = endDate.getTime() - startDate.getTime();
+
+    document.getElementById('countdown').textContent = Math.ceil(countdown / 8.64e7) + ' Days to go!'
+    document.getElementById('duration').textContent = duration / 8.64e7 + ' Day trip.'
+};
