@@ -58,7 +58,9 @@ app.post('/destinations', async (req, res) => {
         
         console.log(destination)
         res.send(destination)
-    } catch (error) {
+    }   
+    catch (error) {
         console.log("Error", error);
     } 
 });
+module.exports = { app }
