@@ -9,14 +9,14 @@
 
 ### Get Up and Running
 - ```npm install``` to get dependencies
-- ```npm start``` to start the backend app
-- ```npm run dev``` in a different terminal to start the frontend app
+- ```npm run build-prod``` to build the app
+- ```npm start``` to start the app
 
-- this app runs on http://localhost:8080
+- this app runs on http://localhost:8000
 
 ### Technologies used:
 * JavaScript
-* Webpack
+* Webpack 5
 * SASS
 
 ### Final Project of Udacity Frontend Web Developer Nanodegree.
